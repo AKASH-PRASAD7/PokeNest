@@ -2,8 +2,9 @@
 
 PokéNest is a modern web application that allows users to discover Pokémon from the vast Pokémon universe, view their stats, and manage their own personal collection. This project is built with a modern tech stack, focusing on a clean user interface and a smooth user experience.
 
-![PokéNest Screenshot](https://via.placeholder.com/800x400.png?text=PokéNest+Application+Screenshot)
-_(Replace with an actual screenshot of the application)_
+##Screenshots
+<img width="1887" height="897" alt="image" src="https://github.com/user-attachments/assets/60574742-15b7-4c8a-82a0-f3b5c7bb8a6e" />
+<img width="1881" height="906" alt="image" src="https://github.com/user-attachments/assets/f5645a7f-39c0-4c63-9830-0cc397aeddce" />
 
 ## ✨ Features
 
@@ -53,10 +54,6 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 3.  **Set up environment variables:**
     Create a `.env` file in the root of the project by copying the example file:
-
-    ```bash
-    cp .env.example .env
-    ```
 
     Then, open the `.env` file and add the required values:
 
