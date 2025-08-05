@@ -33,6 +33,7 @@ export const useCollection = () => {
           color: "#fff",
         },
       });
+      return true; // Indicate success
     } else {
       toast.error(`${pokemon.name} is already in your collection!`, {
         icon: "⚠️",
@@ -42,6 +43,7 @@ export const useCollection = () => {
           color: "#fff",
         },
       });
+      return false; // Indicate failure since already in collection
     }
   };
 
@@ -56,6 +58,7 @@ export const useCollection = () => {
         color: "#fff",
       },
     });
+    return true; // Indicate success
   };
 
   const reorderPokemon = (newCollection: CollectedPokemon[]) => {

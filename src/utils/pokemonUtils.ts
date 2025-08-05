@@ -24,7 +24,7 @@ export const getTypeColor = (type: string): string => {
     ground: "bg-yellow-600",
     flying: "bg-indigo-400",
     psychic: "bg-pink-500",
-    bug: "bg-green-400",
+    bug: "bg-slate-500",
     rock: "bg-yellow-800",
     ghost: "bg-purple-700",
     dragon: "bg-indigo-700",
@@ -33,4 +33,25 @@ export const getTypeColor = (type: string): string => {
     fairy: "bg-pink-300",
   };
   return colors[type] || "bg-gray-400";
+};
+
+export const TYPE_ICONS: Record<string, string> = {
+  fire: "🔥",
+  water: "💧",
+  grass: "🌿",
+  electric: "⚡",
+  bug: "🐛",
+  normal: "⚪",
+  ground: "🌍",
+  rock: "🪨",
+  psychic: "🔮",
+  ghost: "👻",
+  poison: "☠️",
+  fairy: "✨",
+  fighting: "🥊",
+  dark: "🌑",
+  ice: "❄️",
+  dragon: "🐉",
+  steel: "🔩",
+  flying: "🕊️",
 };
