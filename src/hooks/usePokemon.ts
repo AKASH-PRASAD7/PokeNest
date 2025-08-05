@@ -6,7 +6,7 @@ export const usePokemonList = () => {
   return useInfiniteQuery({
     queryKey: ["pokemon-list"],
     queryFn: ({ pageParam = 0 }) => fetchPokemonList(pageParam, 6),
-    getNextPageParam: (lastPage, pages) => {
+    getNextPageParam: (lastPage) => {
       if (lastPage.next) {
         const url = new URL(lastPage.next);
         const offset = url.searchParams.get("offset");

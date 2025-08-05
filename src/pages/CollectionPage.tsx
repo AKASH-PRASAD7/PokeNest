@@ -207,10 +207,10 @@ const CollectionPage = () => {
     <div className="min-h-screen  p-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">
+          <h1 className="text-3xl font-bold text-gray-100 mb-2">
             My Pokémon Collection ({collection.length})
           </h1>
-          <p className="text-gray-600 flex items-center justify-center gap-2">
+          <p className="text-gray-400 flex items-center justify-center gap-2">
             <GripVertical size={18} className="text-gray-400" />
             Drag and drop to reorder your collection
           </p>

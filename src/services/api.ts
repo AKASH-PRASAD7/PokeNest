@@ -1,6 +1,6 @@
 import { type Pokemon, type PokemonListResponse } from "../types/pokemon";
 
-const BASE_URL = "https://pokeapi.co/api/v2";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 export const fetchPokemonList = async (
   offset: number = 0,

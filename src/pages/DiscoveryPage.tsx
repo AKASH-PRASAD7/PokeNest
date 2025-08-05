@@ -88,7 +88,10 @@ const DiscoveryPage = () => {
   return (
     <div className="min-h-screen  p-4">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-5xl font-bold text-center mb-8 text-gray-100">
+        <h1
+          className=" md:text-5xl sm:text-2xl 
+        font-bold text-center mb-8 text-gray-100"
+        >
           Discover Pokémon
         </h1>
 
@@ -106,9 +109,6 @@ const DiscoveryPage = () => {
                 />
               );
             })}
-
-            {/* Loading for next page */}
-            {isFetchingNextPage && <Loader />}
           </div>
         </div>
 

@@ -1,6 +1,6 @@
 import { type CollectedPokemon } from "../types/pokemon";
 
-const STORAGE_KEY = "pokemon-collection";
+const STORAGE_KEY = import.meta.env.VITE_STORAGE_KEY;
 
 export const getCollection = (): CollectedPokemon[] => {
   try {
