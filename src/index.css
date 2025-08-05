@@ -3,4 +3,18 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+/* Custom cursor styles for drag and drop */
+.cursor-grab {
+  cursor: grab;
+}
+
+.cursor-grabbing {
+  cursor: grabbing;
+}
+
+.cursor-grab:active {
+  cursor: grabbing;
+}
+
 @import "tailwindcss";
