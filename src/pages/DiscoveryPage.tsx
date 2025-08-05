@@ -83,7 +83,7 @@ const DiscoveryPage = () => {
           <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
             Discover Pokémon
           </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {Array.from({ length: 6 }).map((_, index) => (
               <LoadingSkeleton key={`initial-skeleton-${index}`} />
             ))}
@@ -117,7 +117,7 @@ const DiscoveryPage = () => {
         </h1>
 
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 max-w-7xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full">
           {allPokemonData.map((pokemon) => {
             const stats = getPokemonStats(pokemon);
             const isInCollection = isPokemonInCollection(pokemon.id);
